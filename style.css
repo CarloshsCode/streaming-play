@@ -3,7 +3,8 @@
 :root{
     --background-color: #141414;
     --secundary-color: #181818;
-    --btn-color: #E50914;
+    --btn-color: #FF1E1E;
+    --btn-color-hover: #C5172E;
     --principal-text: #FFFFFF;
     --secundary-text: #B3B3B3;
 }
@@ -19,4 +20,111 @@ body {
     font-family: "Manrope", sans-serif;
     background-color: var(--background-color);
     color: var(--principal-text);
+}
+
+.header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 56px;
+    font-size: 1.3rem;
+}
+
+.header, .logo, .nav-link {
+    text-decoration: none;
+    color: var(--principal-text);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 30px 0px 4px 0px;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    max-width: 560px;
+    line-height: 1.2;
+}
+
+.btn-principal {
+    background-color: var(--btn-color);
+    color: var(--principal-text);
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 20px 2px var(--btn-color);
+
+
+    & .btn-principal-a {
+        text-decoration: none;
+        color: var(--principal-text);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &:hover{
+        background-color: var(--btn-color-hover);
+        box-shadow: 0px 0px 20px 2px var(--btn-color);
+        transition: .8s ease;
+    }
+}
+
+.aside-section{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;   
+    box-sizing: border-box;
+    /* Gradiente para suavizar entrada/salida */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+}
+
+.logos-aside-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 80%;    /* Comienza fuera de la pantalla */
+    padding-right: 50px; /* Espacio entre repeticiones */
+    animation: mover 10s linear infinite;
+}
+
+.logos-aside {
+    align-items: center;
+    gap: 16px;
+    width: 200px;
+    object-fit: cover;
+    display: inline-flex;
+}
+
+@keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(-30%); }
 }
