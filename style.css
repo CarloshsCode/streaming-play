@@ -108,6 +108,7 @@ body {
     overflow: hidden;
     white-space: nowrap;   
     box-sizing: border-box;
+    padding: 20px 0;
     /* Gradiente para suavizar entrada/salida */
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-repeat: no-repeat;
@@ -123,7 +124,7 @@ body {
     gap: 6.25rem;
     padding-left: 80%;    /* Comienza fuera de la pantalla */
     padding-right: 3.125rem; /* Espacio entre repeticiones */
-    animation: mover 10s linear infinite;
+    animation: mover 15s linear infinite;
 }
 
 .logos-aside {
@@ -134,9 +135,14 @@ body {
     display: inline-flex;
 }
 
+.logos-asides {
+    width: 9rem;
+    object-fit: cover;
+}
+
 @keyframes mover {
     from { transform: translateX(0); }
-    to { transform: translateX(-30%); }
+    to { transform: translateX(-35%); }
 }
 
 /* SECTION - SERVICIOS */
@@ -276,7 +282,13 @@ body {
 
     .logos-aside-container{
         padding: 1.5rem 0;
+        animation: mover 5s linear infinite;
     }
+    @keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(-55%); }
+    }
+
     .logos-aside {
         width: 6rem;
     }

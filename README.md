@@ -18,8 +18,7 @@ El objetivo es brindar a los clientes una forma rápida, clara y confiable de ad
 ## 🛠️ Tecnologías utilizadas
 
 - **HTML5** → estructura de la página.  
-- **CSS3** → diseño y estilos.  
-- **JavaScript** → interacción y funcionalidades.  
+- **CSS3** → diseño y estilos.   
 
 ---
 
