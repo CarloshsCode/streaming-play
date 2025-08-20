@@ -193,6 +193,25 @@ body {
     }
 }
 
+.btn-services {
+    background-color: var(--btn-color);
+    color: var(--principal-text);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-block: 1.5rem;
+
+    &:hover{
+        background-color: var(--btn-color-hover);
+        box-shadow: 0rem 0rem 1.25rem 0.125rem var(--btn-color);
+        transition: .8s ease;
+    }
+}
+
 .text-secundary {
     color: var(--secondary-text);
     font-size: 1rem;
